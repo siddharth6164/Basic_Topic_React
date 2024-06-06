@@ -7,6 +7,7 @@ function Layout() {
             <li><Link to="/">Layout</Link></li>
             <li><Link to="/Usememohook">USEMEMOHOOK</Link></li>
             <li><Link to="/Usecallbackhook">Usecallbackhook</Link></li>
+            <li><Link to="/Usecontexthook">Usecontexthook</Link></li>
         </ul>
         {console.log('Layout')}
         <Outlet/>
