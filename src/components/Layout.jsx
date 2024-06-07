@@ -10,6 +10,8 @@ function Layout() {
             <li><Link to="/Usecontexthook">useContext Hook</Link></li>
             <li><Link to="/Usereducerhook">useReducer Hook</Link></li>
             <li><Link to="/Userefhook">useRef Hook</Link></li>
+            <li><Link to="/Usestatehook">useState Hook</Link></li>
+            <li><Link to="/Useeffecthook">useEffect Hook</Link></li>
         </ul>
         {console.log('Layout')}
         <Outlet/>
