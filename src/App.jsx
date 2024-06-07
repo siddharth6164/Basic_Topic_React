@@ -5,6 +5,7 @@ import Usememohook from './components/Usememohook'
 import Usecallbackhook from './components/Usecallbackhook'
 import Usecontexthook from './components/Usecontexthook'
 import Usereducerhook from './components/Usereducerhook'
+import Userefhook from './components/Userefhook'
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
         <Route path="/Usecallbackhook" element={<Usecallbackhook/>} />
         <Route path="/Usecontexthook" element={<Usecontexthook/>} />
         <Route path="/Usereducerhook" element={<Usereducerhook/>} />
+        <Route path="/Userefhook" element={<Userefhook/>} />
+
         </Route>
       </Routes>
      </BrowserRouter>
