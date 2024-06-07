@@ -4,7 +4,7 @@ function Layout() {
   return (
     <div>
         <ul>
-            <li><Link to="/">Layout</Link></li>
+            <li><Link to="/">Hook</Link></li>
             <li><Link to="/Usememohook">useMemo Hook</Link></li>
             <li><Link to="/Usecallbackhook">useCallback Hook</Link></li>
             <li><Link to="/Usecontexthook">useContext Hook</Link></li>
@@ -13,7 +13,6 @@ function Layout() {
             <li><Link to="/Usestatehook">useState Hook</Link></li>
             <li><Link to="/Useeffecthook">useEffect Hook</Link></li>
         </ul>
-        {console.log('Layout')}
         <Outlet/>
 
     </div>
