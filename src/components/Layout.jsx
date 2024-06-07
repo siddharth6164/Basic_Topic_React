@@ -8,6 +8,8 @@ function Layout() {
             <li><Link to="/Usememohook">USEMEMOHOOK</Link></li>
             <li><Link to="/Usecallbackhook">Usecallbackhook</Link></li>
             <li><Link to="/Usecontexthook">Usecontexthook</Link></li>
+            <li><Link to="/Usereducerhook">Usereducerhook</Link></li>
+
         </ul>
         {console.log('Layout')}
         <Outlet/>
