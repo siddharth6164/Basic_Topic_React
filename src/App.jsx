@@ -8,6 +8,7 @@ import Usereducerhook from './components/Usereducerhook'
 import Userefhook from './components/Userefhook'
 import Usestatehook from './components/Usestatehook'
 import Useeffecthook from './components/Useeffecthook'
+import HOC from './components/HOC/HOC'
 
 function App() {
 
@@ -23,6 +24,8 @@ function App() {
         <Route path="/Userefhook" element={<Userefhook/>} />
         <Route path="/Usestatehook" element={<Usestatehook/>} />
         <Route path="/Useeffecthook" element={<Useeffecthook/>} />
+        <Route path="/High_Order_Components" element={<HOC/>} />
+
         </Route>
       </Routes>
      </BrowserRouter>

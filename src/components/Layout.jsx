@@ -12,9 +12,10 @@ function Layout() {
             <li><Link to="/Userefhook">useRef Hook</Link></li>
             <li><Link to="/Usestatehook">useState Hook</Link></li>
             <li><Link to="/Useeffecthook">useEffect Hook</Link></li>
+            <li><Link to="/High_Order_Components">HOC(High Order Components)</Link></li>
+
         </ul>
         <Outlet/>
-
     </div>
   )
 }
