@@ -9,6 +9,8 @@ import Userefhook from './components/Userefhook'
 import Usestatehook from './components/Usestatehook'
 import Useeffecthook from './components/Useeffecthook'
 import HOC from './components/HOC/HOC'
+import InsideLayout from './components/PropsvsState/InsideLayout'
+import ParentComponent from './components/PropsvsState/ParentComponent'
 
 function App() {
 
@@ -25,7 +27,9 @@ function App() {
         <Route path="/Usestatehook" element={<Usestatehook/>} />
         <Route path="/Useeffecthook" element={<Useeffecthook/>} />
         <Route path="/High_Order_Components" element={<HOC/>} />
-
+        <Route path="/Props_vs_State" element={<InsideLayout/>}>
+          <Route path="/Props_vs_State/Props" element={<ParentComponent/>}/>
+        </Route>
         </Route>
       </Routes>
      </BrowserRouter>
