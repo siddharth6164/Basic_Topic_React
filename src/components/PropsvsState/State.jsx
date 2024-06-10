@@ -5,6 +5,7 @@ function State() {
     const functioncall =(event)=>{setSomedata(event.target.value)}
     return (
         <div>
+            State
             <input type="text" value={someDate} onChange={functioncall}/>
             {someDate}
         </div>
