@@ -13,6 +13,7 @@ import InsideLayout from './components/PropsvsState/InsideLayout'
 import ParentComponent from './components/PropsvsState/ParentComponent'
 import State from './components/PropsvsState/State'
 import ConditonalRender from './components/ConditonalRendering/ConditonalRender'
+import Listandkey from './components/ListandKey/Listandkey'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/Useeffecthook" element={<Useeffecthook/>} />
         <Route path="/High_Order_Components" element={<HOC/>} />
         <Route path="/Conditonal_Rendering" element={<ConditonalRender/>} />
+        <Route path="/List_and_key" element={<Listandkey/>} />
         <Route path="/Props_vs_State" element={<InsideLayout/>}>
           <Route path="/Props_vs_State/Props" element={<ParentComponent/>}/>
           <Route path="/Props_vs_State/State" element={<State/>} />
