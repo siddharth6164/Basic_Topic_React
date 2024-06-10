@@ -11,6 +11,7 @@ import Useeffecthook from './components/Useeffecthook'
 import HOC from './components/HOC/HOC'
 import InsideLayout from './components/PropsvsState/InsideLayout'
 import ParentComponent from './components/PropsvsState/ParentComponent'
+import State from './components/PropsvsState/State'
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/High_Order_Components" element={<HOC/>} />
         <Route path="/Props_vs_State" element={<InsideLayout/>}>
           <Route path="/Props_vs_State/Props" element={<ParentComponent/>}/>
+          <Route path="/Props_vs_State/State" element={<State/>} />
         </Route>
         </Route>
       </Routes>

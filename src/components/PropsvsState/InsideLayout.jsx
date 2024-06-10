@@ -7,6 +7,7 @@ function InsideLayout() {
     <div>
         <ul>
             <li><Link to="/Props_vs_State/Props">Props</Link></li>
+            <li><Link to="/Props_vs_State/State">State</Link></li>
         </ul>
         <Outlet/>
     </div>
