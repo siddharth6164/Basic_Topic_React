@@ -121,9 +121,36 @@ const memoizedValue = useMemo(() => {// function logic}, [dependencies]);
 ```
 
 ### 3. `useCallback` Hook
-**Definition**: The `useCallback` hook returns a memoized version of the callback function, preventing unnecessary re-creations of the function during re-renders.  
+**Definition**: `useCallback` hook returns a memoized version of the callback function, preventing unnecessary re-creations of the function during re-renders.  
 **Syntax**:
 ```jsx
 const memoizedCallback = useCallback(() => {// Your callback function logic here}, [dependencies]);
+```
 
+### 4. `useContext` Hook
+**Definition**: `useContext` is a React hook used to access the value of a Context directly without needing to pass it down manually through props.  
+**Syntax**: 
+```jsx
+const value = useContext(MyContext);
+```
 
+### 5. `usereducer` Hook
+**Definition**: `useReducer` is a hook that allows managing state transitions with a reducer function, similar to Redux.  
+**Syntax**:
+```jsx
+const [state, dispatch] = useReducer(reducer, initialState);
+```
+
+### 6. `useRef` Hook
+**Definition**: `useRef` hook is used to persist values between renders without triggering a re-render. It can be used to access DOM elements or store mutable values that don't cause re-renders when changed.  
+**Syntax**:
+```jsx
+const myRef = useRef(initialValue);
+```
+
+### 7. `useState` Hook
+**Definition**: `useState` is a React hook that enables state management in functional components.  
+**Syntax**:
+```js
+const [state, setState] = useState(initialState);
+```
