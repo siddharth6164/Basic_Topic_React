@@ -191,4 +191,23 @@ function HOC() {
 ```jsx
 {condition ? <ComponentA /> : <ComponentB />}
 ```
+### 11. Lists and Keys
+**Definition**: 
+- **Lists** in React are used to render multiple components by iterating over an array.  
+- **Keys** help React identify elements efficiently for rendering updates.
+
+**Syntax**:
+```jsx
+const items = ['Apple', 'Banana', 'Cherry'];   //list
+
+function ListComponent() {
+  return (
+    <ul>
+      {items.map((item, index) => (
+          <li key={index}>{item}</li>          //key
+      ))}
+    </ul>
+  );
+}
+```
 
