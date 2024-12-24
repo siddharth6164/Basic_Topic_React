@@ -151,17 +151,36 @@ const myRef = useRef(initialValue);
 ### 7. `useState` Hook
 **Definition**: `useState` is a React hook that enables state management in functional components.  
 **Syntax**:
-```js
+```jsx
 const [state, setState] = useState(initialState);
 ```
 
 ### 8. `useeffect` Hook
-**Definition**: `useEffect` hook allows you to perform side effects in your components, such as fetching data, setting up subscriptions, or manually changing the DOM.
+**Definition**: `useEffect` hook allows you to perform side effects in your components, such as fetching data, setting up subscriptions, or manually changing the DOM.  
 **Syntax**:
-```js
+```jsx
 useEffect(() => {// Code to run on component mount or update}, [dependencies]);
 ```
 
+### 9. Higher_Order_Component (HOC)
+**Definition**: A Higher-Order Component (HOC) is a function that takes a component and returns a new component with enhanced functionality.  
+**Syntax**:
+```jsx
+//HOC Component
+// Counter component: A simple counter with a button to increment the count
+function Counter(){
+    const[count,setCount]=useState(0);
+    return(<div><h3>{count}</h3><button onClick={()=>setCount(count+1)}>update</button></div>)
+}
 
-
-
+// Main HOC component to render examples of using the HOCs
+function HOC() {
+  return (
+    <div>
+        <h3>Higher_Order_Component</h3>
+        <HOCRed cmp={Counter} name={"Reusing Components"}/>
+        <HOCGreen cmp={Counter} name={"Reusing Components"}/>
+    </div>
+  )
+}
+```
