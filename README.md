@@ -184,3 +184,11 @@ function HOC() {
   )
 }
 ```
+
+### 10. Conditional Rendering
+**Definition**: Conditional rendering in React allows components to display different outputs based on a condition.  
+**Syntax**: 
+```jsx
+{condition ? <ComponentA /> : <ComponentB />}
+```
+
