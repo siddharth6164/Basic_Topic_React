@@ -154,3 +154,14 @@ const myRef = useRef(initialValue);
 ```js
 const [state, setState] = useState(initialState);
 ```
+
+### 8. `useeffect` Hook
+**Definition**: `useEffect` hook allows you to perform side effects in your components, such as fetching data, setting up subscriptions, or manually changing the DOM.
+**Syntax**:
+```js
+useEffect(() => {// Code to run on component mount or update}, [dependencies]);
+```
+
+
+
+
