@@ -211,3 +211,15 @@ function ListComponent() {
 }
 ```
 
+### 12. Props and State
+**Definition**: 
+- **Props**: Short for "properties," props are used to pass data from a parent component to a child component. They are **read-only**.
+- **State**: A React component's internal data store that determines how it behaves and renders. It is **mutable**.
+
+**Syntax**:
+```jsx
+//Props are passed to a component as attributes in JSX:
+function Welcome(props) {return <h1>Hello, {props.name}!</h1>;}
+
+<Welcome name="Siddharth" />;
+```
